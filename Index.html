@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visual search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="requestSection">
+      <div class="container-1">
+        <div class="title-1">
+          <p class="p-1">Select image to get insights from Bing</p>
+        </div>
+
+        <div class="chooseimg">
+          <label for="uploadImage" class="custom-file-upload">
+            <img src="./image/camera.png" alt="" />
+          </label>
+          <input
+            type="file"
+            accept="image/*"
+            id="uploadImage"
+            name="files[]"
+            size="40"
+            onchange="handleFileSelect('uploadImage')"
+          />
+        </div>
+      </div>
+
+      <div class="img_output">
+        <output id="thumbnail"></output>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <!-- <p>Subscription key:
+                <input type="text" id="key" name="subscription" size=40 maxlength="32" />
+            </p> -->
+      <p>
+        The maximum image size you can upload is 1 MB and the maximum width and
+        height should be 1,500 pixels or less.
+      </p>
+    </div>
+
+    <div class="container-3">
+      <div class="query">
+        <p>
+          <a href="#" onclick="expandCollapse(options.id)">Query options</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-4">
+      <div id="options" style="display: none">
+        <div class="marketoptions">
+        <p class="market">Market:</p>
+          <select id="mkt">
+            <option value="es-AR">Argentina (Spanish)</option>
+            <option value="en-AU">Australia (English)</option>
+            <option value="de-AT">Austria (German)</option>
+            <option value="nl-BE">Belgium (Dutch)</option>
+            <option value="fr-BE">Belgium (French)</option>
+            <option value="pt-BR">Brazil (Portuguese)</option>
+            <option value="en-CA">Canada (English)</option>
+            <option value="fr-CA">Canada (French)</option>
+            <option value="es-CL">Chile (Spanish)</option>
+            <option value="da-DK">Denmark (Danish)</option>
+            <option value="fi-FI">Finland (Finnish)</option>
+            <option value="fr-FR">France (French)</option>
+            <option value="de-DE">Germany (German)</option>
+            <option value="zh-HK">Hong Kong (Traditional Chinese)</option>
+            <option value="en-IN">India (English)</option>
+            <option value="en-ID">Indonesia (English)</option>
+            <option value="it-IT">Italy (Italian)</option>
+            <option value="ja-JP">Japan (Japanese)</option>
+            <option value="ko-KR">Korea (Korean)</option>
+            <option value="en-MY">Malaysia (English)</option>
+            <option value="es-MX">Mexico (Spanish)</option>
+            <option value="nl-NL">Netherlands (Dutch)</option>
+            <option value="en-NZ">New Zealand (English)</option>
+            <option value="no-NO">Norway (Norwegian)</option>
+            <option value="zh-CN">People's Republic of China (Chinese)</option>
+            <option value="pl-PL">Poland (Polish)</option>
+            <option value="pt-PT">Portugal (Portuguese)</option>
+            <option value="en-PH">Philippines (English)</option>
+            <option value="ru-RU">Russia (Russian)</option>
+            <option value="ar-SA">Saudi Arabia (Arabic)</option>
+            <option value="en-ZA">South Africa (English)</option>
+            <option value="es-ES">Spain (Spanish)</option>
+            <option value="sv-SE">Sweden (Swedish)</option>
+            <option value="fr-CH">Switzerland (French)</option>
+            <option value="de-CH">Switzerland (German)</option>
+            <option value="zh-TW">Taiwan (Traditional Chinese)</option>
+            <option value="tr-TR">Turkey (Turkish)</option>
+            <option value="en-GB">United Kingdom (English)</option>
+            <option value="en-US" selected>United States (English)</option>
+            <option value="es-US">United States (Spanish)</option>
+          </select>
+      </div>
+
+        <div class="safesearch">
+        <p>
+          Safe search:
+        </p>
+
+          <select id="safesearch">
+            <option value="moderate" selected>Moderate</option>
+            <option value="strict">Strict</option>
+            <option value="off">off</option>
+          </select>
+
+        </div>
+        
+      </div>
+    </div>
+     <div class="getinsights">
+    <p>
+      <input
+        type="button"
+        id="query"
+        value="Get insights"
+        onclick="document.body.style.cursor='wait'; handleQuery()"
+      />
+    </p>
+  </div>
+  
+
+    <div id="responseSection"></div>
+  </body>
+  <script src="script.js"></script>
+</html>

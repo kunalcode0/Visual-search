@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,200;1,400;1,500&display=swap');
+
+body {
+  font-family: 'Anek Telugu', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EEF2E6;
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.title-1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 1rem;
+    
+}
+.title-1 p{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #2A9D8F;
+}
+.chooseimg{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-file-upload {
+    background-color: #e7fcf9;
+    border-radius: .6rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    border: 2px solid #2A9D8F ;
+}
+
+.chooseimg img{
+    height: 3rem;
+}
+ 
+#uploadImage{
+    display: none;
+}
+
+.thumb {
+    height: 20rem;
+    padding-top: 1rem;
+   
+}
+.img_output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    word-wrap: break-word;
+}
+.container-2 p{
+    font-size: 1.2rem;
+    color: #2A9D8F;
+    margin-left: .3rem;
+}
+
+a{
+    text-decoration: none;
+}
+.container-3{
+    margin-top: 2rem;
+   
+}
+.query{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.query a{
+    font-size: 1.3rem;
+    background-color: #2a9d8f;
+    padding: 1rem .8rem;
+    color: #EEF2E6;
+    border-radius: .5rem;
+    margin: auto;
+}
+
+.container-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.market{
+    font-size: 1.2rem;
+    color: #2a9d8f;
+}
+.marketoptions select{
+    font-size: 1rem;
+    padding: .4rem;
+    color: #2A9D8F;
+    background-color: #eafffd;
+    border: 2px solid #2A9D8F;
+    border-radius: 6px;
+    
+}
+.safesearch{
+    margin-top: 1rem;
+}
+.safesearch p {
+    font-size: 1.2rem;
+    color: #2a9d8f;
+}
+.safesearch select{
+    font-size: 1rem;
+    padding: .4rem;
+    color: #2A9D8F;
+    background-color: #eafffd;
+    border: 2px solid #2A9D8F;
+    border-radius: 6px;
+}
+.getinsights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.getinsights input {
+    font-size: 1.3rem;
+    padding: .6rem 1rem;
+    color:#eef2e6;
+    background-color: #2A9D8F;
+    border: none;
+    border-radius: 6px;
+}
+#responseSection h2{
+    font-size: 2rem;
+    color: #2a9d8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subSection a{
+    font-size: 1.3rem;
+    color: #2A9D8F;
+    
+}
+.subSection{
+    margin-left: 2rem;
+   display: grid;
+   grid-template-columns: repeat(1fr);
+}
+#Default{
+   
+    align-items: center;
+    justify-content: center;
+}
+.subSection h4{
+    display: none;
+}
+.section p{
+    display: none;
+}
+.stackLink{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: #e7fcf9;
+  padding: 1rem;
+  border: 2px solid #2A9D8F;
+  border-radius: 10px;
+  height: 15rem;
+  width: 20rem;
+}
+.stackLink img{
+    margin-left: 2rem;
+  
+}
+
+/* for medium devices */
+
+@media screen and (max-width:650px){
+
+   .title-1 p{
+    font-size: 1.4rem
+   }
+   .thumb{
+    height: 12rem;
+   }
+   .container-2 {
+    margin: 2rem;
+    font-size: .8rem;
+   }
+   .subSection{
+    word-wrap: break-word;
+    margin-left: 1rem;
+   }
+   .stackLink{
+    margin-left: -1rem;
+   }
+   
+}
+
+/* for small devices */
+@media screen and (max-width:450px){
+
+    .title-1 p{
+     font-size: 1rem;
+     
+    }
+    .title-1{
+        margin-right: 1rem;
+    }
+    .thumb{
+     height: 10rem;
+    }
+    .container-2 {
+     margin: 1rem;
+     font-size: .5rem;
+    }
+    .subSection{
+     word-wrap: break-word;
+     margin-left: 1rem;
+    }
+    .stackLink{
+     margin-left: -1rem;
+    }
+    .stackLink{
+        height: 11rem;
+        width: 15rem;
+    }
+    .stackLink a{
+        font-size: .7rem;
+        margin: .5rem;
+       word-wrap: break-word;
+    }
+    
+    
+ }
+
+ @media screen and (max-width:350px){
+
+    .title-1 {
+        margin-left: 2rem;
+    }
+    .market{
+        margin-left: 1rem;
+    }
+    .marketoptions select{
+        width: 15rem;
+    }
+    #responseSection h2{
+        font-size: 1.4rem;
+    }
+    .subSection{
+        margin-left: .7rem;
+    }
+    .stackLink{
+        height: 11rem;
+        width: 13rem;
+    }
+    
+ }
+
+
